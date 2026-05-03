@@ -1,3 +1,44 @@
+:root {
+  /* light theme */
+  --color-surface: var(--color-white);
+  --color-surface-alt: var(--color-neutral-100);
+  --color-on-surface: var(--color-neutral-600);
+  --color-on-surface-strong: var(--color-neutral-900);
+  --color-primary: var(--color-black);
+  --color-on-primary: var(--color-neutral-100);
+  --color-secondary: var(--color-neutral-800);
+  --color-on-secondary: var(--color-white);
+  --color-outline: transparent;
+  --color-outline-strong: var(--color-neutral-800);
+
+  /* dark theme */
+  --color-surface-dark: var(--color-neutral-950);
+  --color-surface-dark-alt: var(--color-neutral-800);
+  --color-on-surface-dark: var(--color-neutral-400);
+  --color-on-surface-dark-strong: var(--color-neutral-100);
+  --color-primary-dark: var(--color-white);
+  --color-on-primary-dark: var(--color-black);
+  --color-secondary-dark: var(--color-neutral-300);
+  --color-on-secondary-dark: var(--color-black);
+  --color-outline-dark: var(--color-neutral-700);
+  --color-outline-dark-strong: var(--color-neutral-300);
+
+  /* shared colors */
+  --color-info: var(--color-sky-500);
+  --color-on-info: var(--color-white);
+  --color-success: var(--color-green-300);
+  --color-on-success: var(--color-slate-900);
+  --color-warning: var(--color-amber-300);
+  --color-on-warning: var(--color-amber-900);
+  --color-danger: var(--color-red-500);
+  --color-on-danger: var(--color-white);
+
+  /* border radius */
+  --radius-radius: var(--radius-none);
+}
+
+[x-cloak] { display: none !important; }
+    
 .pencil-underline {
   position: relative;
   padding-bottom: 3px;
@@ -19,19 +60,6 @@
 
   background-repeat: repeat-x;
   background-size: contain;
-}
-
-/* initial state */
-.slide-in {
-  opacity: 0;
-  transform: translateX(-40px);
-  transition: all 0.7s ease;
-}
-
-/* active state */
-.slide-in-active {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 /* Fixes the flash of the data content transition */
